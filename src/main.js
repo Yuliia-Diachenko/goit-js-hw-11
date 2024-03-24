@@ -27,7 +27,7 @@ const handleLoad = () => {
 
 window.onload = handleLoad;
 
-inputBtn.addEventListener('click', async event => {
+fillForm.addEventListener('submit', async event => {
   event.preventDefault();
 
   searchImgs = inputfield.value.trim();
@@ -68,4 +68,5 @@ inputBtn.addEventListener('click', async event => {
     hideLoader();
     handleLoad();
   }
+  fillForm.reset();
 });
